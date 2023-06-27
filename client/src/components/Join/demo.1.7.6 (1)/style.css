@@ -1,0 +1,90 @@
+#openai_response_popup, #openai_response_popup * {
+    all: initial;
+    font-size: 15px;
+    font-family: consolas, sans-serif, arial;
+}
+
+#openai_response_popup {
+    position: fixed;
+    top: 30px;
+    z-index: 99999999;
+    background-color: #131727;
+    color: #ffffff;
+    width: 420px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #000000;
+    cursor: move;
+    box-shadow: 10px 10px 50px #a7a7a7;
+    overflow-y:auto;
+    height:200px;
+}
+
+div#openai_response_popup:before {
+    content: "";
+    height: 42px;
+    display: block;
+    background-image: url("chrome-extension://__MSG_@@extension_id__/popup/logo.png");
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    margin-bottom: 13px;
+}
+
+#openai_response_close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: bold;
+    width: 24px;
+    height: 24px;
+    line-height: 18px;
+    text-align: center;
+    color: #fff;
+}
+
+#openai_response_close:hover {
+    color: red;
+}
+
+#openai_response_popup span#popup_answer_text, #openai_response_popup span#popup_question_text {
+    color: #cdcbe5;
+}
+
+#openai_response_popup #popup_selected_text {
+    display:none;
+}
+
+#openai_response_popup span#popup_question_label {
+    color:red;   
+}
+
+#openai_response_popup span#popup_answer_label {
+    color:#69b787;
+    display:none;
+}
+
+/* Scroll bar style */ 
+
+/* Width */
+#openai_response_popup::-webkit-scrollbar {
+  width: 10px;   
+}
+
+/* Track */
+#openai_response_popup::-webkit-scrollbar-track {
+  background: #20293a;
+  border-radius: 0px 8px 8px 0px;  
+}
+ 
+/* Handle */
+#openai_response_popup::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 0px 8px 8px 0px;   
+}
+
+/* Handle on hover */
+#openai_response_popup::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}

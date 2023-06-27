@@ -1,0 +1,95 @@
+html {
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.join__outer-container {
+  text-align: center;
+  background-color: skyblue;
+  height: 100vh;
+    background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: repeat;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.join__logo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.site-logo {
+    width: 100%;
+}
+
+.join__header {
+  font-family: "Rock Salt", cursive;
+}
+
+.join__button {
+  font-size: 1.5rem;
+  background-color: purple;
+  color: white;
+  padding: 12px;
+  margin: 15px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.5);
+}
+
+.join__button:hover {
+  font-size: 1.5rem;
+  background-color: orange;
+  color: black;
+  padding: 12px;
+  margin: 15;
+  border-radius: 10px;
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.5);
+}
+
+.join__button:active {
+  font-size: 1.5rem;
+  background-color: rgba(255, 166, 0, 0.726);
+  color: black;
+  padding: 9px;
+  margin: 15px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.5);
+}
+
+.join__button:focus {
+  outline: none;
+}
+
+.join__links-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.join__links-container li {
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+a:hover,
+a:active {
+  color: orange;
+}

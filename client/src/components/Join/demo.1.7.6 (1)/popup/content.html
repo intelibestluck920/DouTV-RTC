@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="logo_wrapper">
+                <img src="logo.png" id="logo" />
+            </div>
+            <div id="explanation_wrapper">
+                <h2>Questions I work best on:</h2>
+                <ul>
+                    <li>Multiple Choice</li>
+                    <li>True or False</li>
+                    <li>Moderate Concept questions</li>
+                </ul>   
+                <h2>Questions I work decent on:</h2>
+                <ul>
+                    <li>Intermediate math</li> 
+                    <li>Fill In Blank</li>
+                    <li>Complex concept questions</li>
+                </ul>  
+                <h2>Questions I'm still learning:</h2>
+                <ul>
+                    <li>Questions with images</li>
+                    <li>Complex math questions</li>
+                    <li>Complex reasoning questions</li>
+                </ul>  
+                <a href="#" id="get_started" class="btn popup_button">I Understand, Get Started!</a>
+            </div>
+            <div id="api_key_wrapper">
+                <p>You can create your api key <a href="https://beta.openai.com/account/api-keys" target="_blank">here</a></p>
+                <input type="text" id="api_key" placeholder="API Key" />
+                <a href="#" id="save" class="btn popup_button">Save</a>
+                <a href="https://youtu.be/HJRvKsGjqfo" target="_blank" class="btn popup_button">How to create api key</a>
+            </div>
+
+            <div id="extension_features_wrapper">
+                <a href="#" id="api_key_button" class="btn popup_button">Api Key</a>
+                <a href="#" id="manage_subscription" class="btn popup_button">Subscription</a>
+                <a href="https://discord.gg/dropinai" id="support_button" target="_blank" class="btn popup_button">Support</a>
+                <div id="slider_wrapper" class="on-off-field">
+                    <div id="slider_title">Highlight text</div>
+                    <label class="switch">
+                        <input type="checkbox" id="cb_enabled">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <textarea id="input_text" rows="6" placeholder="Input text"></textarea>
+
+                <a href="#" id="generate" class="btn popup_button">Generate</a>
+
+                <p id="output" class="typewrite"></p>
+            </div>
+
+            <div id="extension_login_wrapper">
+                <form action="">
+                    <p>Welcome to Dropinai!</p>
+                    <p>Free trial soon, get updates <a href="https://discord.gg/dropinai" target="_blank">here</a></p>
+                    <a href="#" class="btn popup_button" id="pay">Pay</a>
+                </form>
+            </div>
+        </div>
+        <script src="../jquery.min.js"></script>
+        <script src="../ExtPay.js"></script>                
+        <script src="script.js"></script>
+    </body>
+
+</html>
